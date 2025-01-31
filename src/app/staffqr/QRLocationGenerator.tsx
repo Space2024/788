@@ -447,12 +447,12 @@ const QRGeneratorPage = () => {
             <div className="flex items-center justify-center space-x-2">
               <QrCode className="h-6 w-6 text-primary" />
               <CardTitle className="text-sm font-bold text-center">
-                Secure QR Generator
+                Marketing QR Generator
               </CardTitle>
             </div>
-            <p className="text-center text-xs text-gray-600">
+            {/* <p className="text-center text-xs text-gray-600">
               Generate secure QR codes for staff verification
-            </p>
+            </p> */}
           </CardHeader>
 
           <CardContent className="space-y-6 pt-6">
@@ -512,7 +512,7 @@ const QRGeneratorPage = () => {
 
         {/* Footer Note */}
         <p className="text-center text-sm text-gray-500 mt-4">
-          Secure QR codes are valid for verification purposes only
+          QR codes are valid for Customer Registration purposes only
         </p>
       </div>
     </div>

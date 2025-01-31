@@ -71,11 +71,11 @@ const LogoutButton = () => {
 
       if (!userData || !userData.user_code) {
         clearSpecificCookies();
-        router.push('/login');
+        router.push('/');
         return;
       }
 
-      const response = await api.post('/order-logout', { 
+      const response = await api.post('https://cust.spacetextiles.net/order-logout', { 
         user_code: userData.user_code 
       });
 
