@@ -225,7 +225,7 @@ const AuthPage = () => {
   const fetchCombinedData = async () => {
     try {
       const { data } = await axios.get(
-        'http://localhost:8080/getCombinedUserRoleData'
+        'https://cust.spacetextiles.net/getCombinedUserRoleData'
       );
       console.log(data.portalNames);
       setAllData(data);
@@ -277,7 +277,7 @@ const AuthPage = () => {
     setIsLoading(true);
     setErrorMessage('');
     try {
-      const response = await axios.post('http://localhost:8080/order-verify-otp',
+      const response = await axios.post('https://cust.spacetextiles.net/order-verify-otp',
         {
           user_code: formData.userCode, 
           user_approval_concern: formData.concern,
@@ -313,7 +313,7 @@ const AuthPage = () => {
 
   // Create axios instance with default config
   const api = axios.create({
-    baseURL: process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080',
+    baseURL: process.env.NEXT_PUBLIC_API_URL || 'https://cust.spacetextiles.net',
     headers: {
       'Content-Type': 'application/json',
     },
