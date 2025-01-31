@@ -80,7 +80,7 @@ const SecureQRGenerator = memo(
           const sessionId = `${ecno}-${Date.now()}-${randomString}`;
 
           // Create verification URL with encoded ECNO
-          const verificationUrl = `http://localhost:3000/${encodedEcno}/${referenceCode}`;
+          const verificationUrl = `https://qrcode-ten-lac.vercel.app/${encodedEcno}/${referenceCode}`;
 
           const newQrData = {
             url: verificationUrl,
